@@ -4,7 +4,10 @@ import {
     Text,
     StyleSheet,
     TouchableOpacity,
+    LayoutAnimation
 } from "react-native";
+import { Ionicons } from '@expo/vector-icons'
+
 import * as firebase from 'firebase'
 
 class HomeScreen extends Component {
@@ -24,12 +27,13 @@ class HomeScreen extends Component {
     }
 
     render() {
+        LayoutAnimation.easeInEaseOut();
         return (
             <View style={styles.container}>
                 <Text>Hola {this.state.email} </Text>
 
                 <TouchableOpacity style={{marginTop: 32}} onPress= {this.signOutUser}>
-                    <Text>Salir</Text>
+                    <Text>Salir   <Ionicons name="ios-log-out" size={15}/></Text>
                 </TouchableOpacity>
             </View>
         );

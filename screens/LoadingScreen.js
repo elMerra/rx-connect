@@ -16,7 +16,7 @@ class LoadingScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Loading...</Text>
+                <Text>Cargando...</Text>
                 <ActivityIndicator size='large'>
 
                 </ActivityIndicator>

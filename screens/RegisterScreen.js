@@ -35,7 +35,7 @@ class RegisterScreen extends Component {
             <View style={styles.container}>
                 <View style={styles.logo}>
                     <Image source={require("../assets/splash.png")}
-                    style={{ height: 200, width: 370}}                    
+                    style={{ height: 135, width: 370}}                    
                     >
 
                     </Image>
